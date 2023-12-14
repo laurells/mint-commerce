@@ -22,13 +22,12 @@ const MyLink: React.FC<LinkProps> = ({
 }) => {
   return (
     <Link href={href} locale={locale}
-      
-        className={`py-2 px-4 text-center ${
-          active ? "bg-gray-200 text-gray-500" : "bg-white text-gray-500"
+
+      className={`py-2 px-4 text-center ${active ? "bg-gray-200 text-gray-500" : "bg-white text-gray-500"
         }`}
-        {...rest}
-      >
-        {children}
+      {...rest}
+    >
+      {children}
     </Link>
   );
 };
@@ -47,10 +46,10 @@ const TopNav = () => {
       return null;
     }
   };
-  
+
 
   return (
-    <div className="bg-gray-500 text-gray-100 hidden lg:block">
+    <div className="bg-black text-gray-100 hidden lg:block">
       <div className="flex justify-between app-max-width">
         <ul className={`flex ${styles.topLeftMenu}`}>
           <li>
@@ -72,17 +71,17 @@ const TopNav = () => {
         </ul>
         <ul className={`flex ${styles.topRightMenu}`}>
           <li>
-         
-            <Menu 
-            as="div" 
-             //@ts-ignore
-            className="relative">
-              <Menu.Button 
-              as="a" 
-               //@ts-ignore
-              href="#" 
-               //@ts-ignore
-              className="flex">
+
+            <Menu
+              as="div"
+              //@ts-ignore
+              className="relative">
+              <Menu.Button
+                as="a"
+                //@ts-ignore
+                href="#"
+                //@ts-ignore
+                className="flex">
                 {locale === "en"} <DownArrow />
               </Menu.Button>
               <Menu.Items
@@ -90,7 +89,7 @@ const TopNav = () => {
                 style={{ zIndex: 9999 }}
               >
                 <Menu.Item>
-                    {/* @ts-ignore */}
+                  {/* @ts-ignore */}
                   {({ active }) => (
                     //@ts-ignore
                     <MyLink active={active} href={asPath} locale="en">
@@ -99,7 +98,7 @@ const TopNav = () => {
                   )}
                 </Menu.Item>
                 <Menu.Item>
-                    {/* @ts-ignore */}
+                  {/* @ts-ignore */}
                   {({ active }) => (
                     //@ts-ignore
                     <MyLink active={active} href={asPath} locale="fr">
@@ -111,16 +110,16 @@ const TopNav = () => {
             </Menu>
           </li>
           <li>
-            <Menu 
-            as="div" 
-             //@ts-ignore
-            className="relative">
-              <Menu.Button 
-              as="a" 
-               //@ts-ignore
-              href="#" 
-               //@ts-ignore
-              className="flex">
+            <Menu
+              as="div"
+              //@ts-ignore
+              className="relative">
+              <Menu.Button
+                as="a"
+                //@ts-ignore
+                href="#"
+                //@ts-ignore
+                className="flex">
                 usd <DownArrow />
               </Menu.Button>
               <Menu.Items
@@ -128,34 +127,32 @@ const TopNav = () => {
                 style={{ zIndex: 9999 }}
               >
                 <Menu.Item>
-                    {/* @ts-ignore */}
+                  {/* @ts-ignore */}
                   {({ active }) => (
                     <Link
                       href="#"
-                      className={`${
-                        active
+                      className={`${active
                           ? "bg-gray-100 text-gray-500"
                           : "bg-white text-gray-500"
-                      } py-2 px-4 text-center focus:outline-none`}
+                        } py-2 px-4 text-center focus:outline-none`}
                     >
                       usd
                     </Link>
                   )}
                 </Menu.Item>
-                {/* <Menu.Item>
+                <Menu.Item>
                   {({ active }) => (
                     <a
                       href="#"
-                      className={`${
-                        active
-                          ? "bg-gray100 text-gray500"
-                          : "bg-white text-gray500"
-                      } py-2 px-4 text-center focus:outline-none`}
+                      className={`${active
+                          ? "bg-gray-100 text-gray-500"
+                          : "bg-white text-gray-500"
+                        } py-2 px-4 text-center focus:outline-none`}
                     >
-                      {t("mmk")}
+                      {("fre")}
                     </a>
                   )}
-                </Menu.Item> */}
+                </Menu.Item>
               </Menu.Items>
             </Menu>
           </li>
