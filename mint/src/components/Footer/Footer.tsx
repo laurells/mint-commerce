@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
       <div className={styles.bottomFooter}>
         <div className="app-max-width app-x-padding w-full flex justify-between">
-          <span className="">@2023 Laurels. all rights reserved</span>
+          <span className="">@2023 MINT. all rights reserved</span>
           <span className="flex items-center">
             <span className="hidden sm:block">
               follow us on social media:
