@@ -10,6 +10,7 @@ import TestiSlider from "../components/TestiSlider/TestiSlider";
 import { apiProductsType, itemType } from "../context/cart/cart-types";
 import LinkButton from "../components/Buttons/LinkButton";
 import ourShop from "../../public/images/ourshop.png";
+import { inter } from "../components/Fonts/fonts"
 
 type Props = {
   products: itemType[];
@@ -84,7 +85,7 @@ const Home: React.FC<Props> = ({ products }) => {
         <section className="app-max-width w-full h-full flex flex-col justify-center mt-16 mb-20">
           <div className="flex justify-center">
             <div className="w-3/4 sm:w-1/2 md:w-1/3 text-center mb-8">
-              <h2 className="text-3xl mb-4">Best selling</h2>
+              <h2 className={`text-3xl mb-4 ${inter.className}`}>Best selling</h2>
               <span>Here are some of our best selling products. Explore yourself in the latest trends.</span>
             </div>
           </div>
