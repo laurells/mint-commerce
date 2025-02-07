@@ -71,18 +71,18 @@ export default function Footer() {
             label="Newsletter Input Box"
             name="email"
             type="email"
-            extraClass=" w-full sm:w-auto"
+            extraClass="w-full sm:w-auto"
           />{" "}
           <Button
             size="lg"
-            value='send'
+            value='Send'
             extraClass="ml-0 mt-4 sm:mt-0 tracking-widest sm:tracking-normal sm:mt-0 sm:ml-4 w-auto w-full sm:w-auto"
           />
         </div>
       </div>
       <div className={styles.bottomFooter}>
         <div className="app-max-width app-x-padding w-full flex justify-between">
-          <span className="">@2023 MINT. all rights reserved</span>
+          <span className="">@2025 Terra Balance. all rights reserved</span>
           <span className="flex items-center">
             <span className="hidden sm:block">
               follow us on social media:

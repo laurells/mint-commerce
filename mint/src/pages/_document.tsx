@@ -1,9 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-const title = "Mint Commerce";
+const title = "Terra Balance Commerce";
 const desc =
-  "Mint commerce developed with Next.JS.";
-const keywords = "Mint, E-commerce, NextJS";
+  "Terra Balance commerce";
+const keywords = "Terra Balance, E-commerce";
 
 export default class MyDocument extends Document {
   render() {
@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
 
           <meta property="og:url" content="#" />
           <link rel="canonical" href="#" />
-          <meta property="og:site_name" content="MINT commerce" />
+          <meta property="og:site_name" content="Terra Balance commerce" />
           <meta property="og:description" content={desc} key="og_description" />
           <meta property="og:title" content={title} key="og_title" />
           <meta

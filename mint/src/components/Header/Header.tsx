@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 import TopNav from "./TopNav";
 import AppHeader from "./AppHeader";
 import styles from "./Header.module.css";
@@ -72,7 +73,7 @@ const Header: React.FC<Props> = ({ title }) => {
                 href="#main-content"
                 className="whitespace-nowrap absolute z-50 left-4 opacity-90 rounded-md bg-white px-4 py-3 transform -translate-y-40 focus:translate-y-0 transition-all duration-300"
             >
-                skip to main content
+                Skip to main content
             </Link>
             {/* ===== Main Navigation ===== */}
             <nav
@@ -92,12 +93,12 @@ const Header: React.FC<Props> = ({ title }) => {
                         <ul className={`flex-0 lg:flex-1 flex ${styles.leftMenu}`}>
                             <li>
                                 <Link href={'#'}>
-                                    Men
+                                    Fruits & Food
                                 </Link>
                             </li>
                             <li>
                                 <Link href={'#'}>
-                                    Women
+                                    Livestock
                                 </Link>
                             </li>
                             <li>
@@ -107,24 +108,22 @@ const Header: React.FC<Props> = ({ title }) => {
                             </li>
                             <li>
                                 <Link href="#">
-                                    Blogs
+                                    Book Us
                                 </Link>
                             </li>
                         </ul>
 
 
                         <div className="flex-1 flex justify-center items-center cursor-pointer">
-                            <div className="w-32 h-auto">
-                                <Link href="/">
-
-                                    <h1 className="text-4xl font-bold tracking-wide text-center text-purple-700">
-                                        <span className="bg-gradient-to-r from-black via-gray-800 to-gray-600
- text-transparent bg-clip-text">
-                                            MINT
-                                        </span>
-                                    </h1>
-
-
+                            <div className="h-auto justify-center">
+                                <Link href="/" className="inline-block p-0 m-0">
+                                <Image 
+                                    src="/images/terra-balance-logo.png" 
+                                    alt="Terra Balance Logo" 
+                                    width={50} // Set appropriate width
+                                    height={30} // Set appropriate height
+                                   
+                                 />
                                 </Link>
                             </div>
                         </div>
