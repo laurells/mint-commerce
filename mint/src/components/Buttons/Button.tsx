@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React,{ FC } from "react";
 
 type Props = {
   type?: "button" | "submit" | "reset";
@@ -7,6 +7,7 @@ type Props = {
   value: string;
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  children?: React.ReactNode;
 };
 
 const Button: FC<Props> = ({
@@ -14,7 +15,6 @@ const Button: FC<Props> = ({
   value,
   extraClass,
   onClick,
-  //@ts-ignore
   children,
   type = "button",
   disabled = false,

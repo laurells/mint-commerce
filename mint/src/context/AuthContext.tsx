@@ -1,3 +1,4 @@
+import api from "@/config/api";
 import axios from "axios";
 import { getCookie, deleteCookie, setCookie } from "cookies-next";
 import React, { useState, useEffect, useContext, createContext } from "react";
@@ -79,14 +80,19 @@ function useProvideAuth() {
     phone: string
   ) => {
     try {
-      const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_PROD_BACKEND_URL}/api/v1/auth/register`,
+      const response = await api.post(
+        `/api/v1/auth/register`,
         {
           email,
           fullname,
           password,
           shippingAddress,
           phone,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
         }
       );
       const registerResponse = response.data;

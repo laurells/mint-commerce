@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppCustomProps) {
     return (
         <Fragment>
           <Head>
-            <title>Mint Ecommerce</title>
+            <title>Terra Balance Ecommerce</title>
           </Head>
           <Component {...pageProps} />
         </Fragment>

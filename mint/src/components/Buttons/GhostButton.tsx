@@ -6,6 +6,7 @@ type Props = {
   inverted?: boolean;
   noBorder?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  children: React.ReactNode;
 };
 
 // eslint-disable-next-line react/display-name

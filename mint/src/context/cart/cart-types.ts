@@ -6,19 +6,19 @@ export const SET_CART = "SET_CART";
 export const CLEAR_CART = "CLEAR_CART";
 
 export type commonType = {
-  id: number;
+  id: number | string;
   name: string;
   price: number;
-  qty?: number | undefined;
+  qty?: number;
   discountPercent?: number;
   description?: string;
   detail?: string;
-  categoryId?: number;
+  categoryId?: number | string;
   stock?: number;
   createdAt?: string;
   updatedAt?: string | null;
   category?: {
-    id?: number;
+    id?: number | string;
     name?: string;
     description?: string;
     thumbnailImage?: string;
@@ -36,6 +36,8 @@ export interface itemType extends commonType {
 export interface apiProductsType extends commonType {
   image1?: string;
   image2?: string;
+  img1?: string;
+  img2?: string;
 }
 
 export type cartFuncType = (item: itemType) => void;

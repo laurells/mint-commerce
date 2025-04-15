@@ -10,13 +10,13 @@ type Props = {
 
 // Define default values for the description and keywords
 const defaultDesc =
-    "MINT e-commerce developed with Next.JS.";
+    "Terra Balance E-Commerce.";
 const defaultKeywords =
-    "Online Shop, E-commerce, NextJS";
+    "Online Shop, E-commerce";
 
 // Define the AppHeader component as a functional component
 const AppHeader: React.FC<Props> = ({
-    title = "MINT",
+    title = "Terra Balance",
     desc = defaultDesc,
     keywords = defaultKeywords,
 }) => {
